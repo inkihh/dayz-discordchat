@@ -11,6 +11,8 @@ class DiscordChat
 	void DiscordChat()
 	{
 		MakeDirectory(m_ProfilePath);
+		MakeDirectory(inki_Logger.m_LogPath);
+		DeleteFile(inki_Logger.m_LogFile);
 
 		m_Settings = new inki_Settings(m_ConfigFile);
 		m_Log = new inki_Logger;
