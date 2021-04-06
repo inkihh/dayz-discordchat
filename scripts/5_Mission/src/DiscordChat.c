@@ -43,13 +43,6 @@ class DiscordChat
 
 		m_Log.Log("Chat: <" + Username + "> " + Message);
 
-		map<string, string> DiscordMessage = new map<string, string>();
-
-		DiscordMessage["content"] = Message;
-		DiscordMessage["username"] = Username;
-
-		m_Log.Log(MultipartMessage);
-
 		DiscordCallback Cbxcb = new DiscordCallback;
 		Cbxcb.SetDiscordChat(this);
 
